@@ -7,31 +7,202 @@
       Miroslav Monkevič :: Užduotis: „Portfolio“ - vieno puslapio svetainė
       (HTML/CSS)
     </title>
+    <!-- Fontai is Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Social links icons is Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="main-container">
       <header>
         <nav>
-          <img src="./assets/images/white_logo.png" alt="" id="logo" />
+          <img
+            src="assets/images/white_logo.png"
+            alt=""
+            id="logo"
+            width="136"
+          />
           <ul id="top-menu">
-            <li>Home</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#what-we-do">About as</a></li>
+            <li><a href="#our-portfolio">Portfolio</a></li>
+            <li><a href="#new-offers">Blog</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
           </ul>
         </nav>
+
+        <section id="hero">
+          <p>introduction to</p>
+          <h1>Creative meteor</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            quidem atque quas! Doloribus, accusantium odio.
+          </p>
+          <a class="button btn-green" href="#">Discover more</a>
+        </section>
       </header>
 
       <main>
-        <section id="what-we-do"></section>
-        <section id="new-offers"></section>
-        <section id="our-portfolio"></section>
-        <section id="contact-us"></section>
+        <section id="what-we-do" class="light-type">
+          <h2>What we do</h2>
+          <hr />
+          <div id="what-we-do-articles">
+            <article class="add-shadow">
+              <img
+                class="article-icon"
+                src="assets/icons/first-service-main.png"
+                alt=""
+              />
+              <h3>Customizations</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequuntur nihil adipisci exercitationem.
+              </p>
+            </article>
+            <article class="add-shadow">
+              <img
+                class="article-icon"
+                src="assets/icons/second-service-main.png"
+                alt=""
+              />
+              <h3>Creative ideas</h3>
+              <p>
+                Lorem, ipsum dolor sit amet elit. Harum dolores aliquid,
+                possimus vero ex?
+              </p>
+            </article>
+            <article class="add-shadow">
+              <img
+                class="article-icon"
+                src="assets/icons/third-service-main.png"
+                alt=""
+              />
+              <h3>Good profit</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi, rerum! Nisi quod tenetur ?
+              </p>
+            </article>
+            <article class="add-shadow">
+              <img
+                class="article-icon"
+                src="assets/icons/fourth-service-main.png"
+                alt=""
+              />
+              <h3>Open to public</h3>
+              <p>
+                Lorem ipsum dolor sit amet elit. Consectetur amet magni nisi
+                aliquam!
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="new-offers" class="dark-type">
+          <article>
+            <h3>New offers just arived,<br />Get it now and take profit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              blanditiis quia at aliquam inventore nulla?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+              sit dolorem deleniti sunt hic temporibus!
+            </p>
+            <a class="button btn-white" href="">Discover more</a
+            > <a class="button btn-green" href="">Purchase now</a>
+          </article>
+
+          <figure class="image-collage">
+            <img src="assets/images/cups.jpg" alt="" /><img
+              src="assets/images/nachos.jpg"
+              alt=""
+            /><img src="assets/images/pancakes.jpg" alt="" />
+          </figure>
+        </section>
+        <section id="our-portfolio" class="light-type">
+          <h2>Our portfolio</h2>
+          <hr />
+          <ul>
+            <li>Nature</li>
+            <li>Workspace</li>
+            <li>City</li>
+            <li>Technology</li>
+          </ul>
+          <figure>
+            <img
+              class="add-shadow"
+              src="assets/images/portfolio_big_01.jpg"
+              alt=""
+            /><img
+              class="add-shadow"
+              src="assets/images/portfolio_big_02.jpg"
+              alt=""
+            /><img
+              class="add-shadow"
+              src="assets/images/portfolio_big_03.jpg"
+              alt=""
+            /><img
+              class="add-shadow"
+              src="assets/images/portfolio_big_04.jpg"
+              alt=""
+            />
+          </figure>
+        </section>
+        <section id="contact-us" class="dark-type">
+          <h2>Contact us</h2>
+          <hr />
+          <form action="#">
+            <input type="text" name="firstname" id="" placeholder="Your name..." />
+            <input type="email" name="email" id="" placeholder="Your email..." />
+            <textarea placeholder="Your message" id=""></textarea>
+            <button class="button btn-green" type="submit">Send message</button>
+          </form>
+        </section>
       </main>
 
-      <footer></footer>
+      <footer>
+        <p>Copyright &copy; 2026 Company Name - Design: <span>Miro</span></p>
+        <ul id="social-links">
+          <li>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://facebook.com/" target="_blank" title="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://snapchat.com/" target="_blank" title="Snapchat"
+              ><i class="fa-brands fa-snapchat"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://pinterest.com/" target="_blank" title="Pinterest"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank" title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>

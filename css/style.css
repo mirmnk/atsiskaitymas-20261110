@@ -1,0 +1,435 @@
+/**************************************
+/*     Pagrindiniai bendri styliai
+/*************************************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", arial, sans-serif;
+}
+
+section {
+  text-align: center;
+    padding: var(--main-section-padding-block);
+}
+
+section.dark-type {
+  background-color: var(--bkg-color-dark);
+
+}
+
+section.dark-type h2 {
+  color: var(--header-txt-color);
+}
+section.dark-type hr {
+  background-color: var(--header-txt-color);
+}
+
+section.light-type {
+  background-color: var(--bkg-color-light);
+  color: var(--light-section-txt-color);
+}
+
+section.light-type h3,
+section.light-type h2 {
+color: var(--h2-color-dark);    
+}
+section.light-type h2 {
+  text-transform: uppercase;
+  }
+
+.fa-brands {
+
+    background-color: var(--main-color);
+    color: var(--h2-color-dark);
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+:root {
+  --main-site-padding-inline: 1.5rem;
+  --main-section-padding-block: 3rem;
+  --header-txt-color: white;
+  --main-color: #a2cf8d;
+  --hover-color: #5c9d7d;
+  --bkg-color-dark: #3f3f3f;
+  --bkg-color-light: #f4f4f4;
+  --h2-color-dark: #121212;
+  --form-elements-bkg: #525252;
+  --light-section-txt-color: #5a5a5a;
+}
+.main-container {
+  max-width: 75rem;
+  min-width: 575px;
+  margin-inline: auto;
+  border: 1px solid #000;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--header-txt-color);
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.btn-green {
+  background-color: var(--main-color);
+}
+
+a.btn-white {
+  background-color: var(--bkg-color-light);
+  color: var(--h2-color-dark);
+}
+
+a.btn-white:hover {
+    background-color: var(--form-elements-bkg);
+}
+
+hr {
+  width: 2rem;
+  border: 0;
+  height: 0.3rem;
+  background-color: var(--h2-color-dark);
+  display: inline-block;
+}
+
+.add-shadow {
+  box-shadow: 0px 0px 15px 5px #b5b5b5;
+}
+
+/***********************************************
+/* Hederio styliai
+/**********************************************/
+.main-container header {
+  height: 30rem;
+  background-image: url("/assets/images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-container header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--main-site-padding-inline);
+  padding-top: 1rem;
+}
+
+.main-container header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.main-container header nav ul a {
+  color: var(--header-txt-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.main-container header nav ul a:hover {
+ color: var(--hover-color);
+}
+
+/**************  Hero section *****************/
+
+header #hero {
+  color: var(--header-txt-color);
+  width: 50%;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 8rem;
+}
+
+header #hero p {
+    margin-block: 1rem;
+}
+
+#hero p:first-child {
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+#hero h1 {
+  text-transform: uppercase;
+}
+
+/************************************************
+/* Bendri sekciju styliai
+/************************************************/
+
+main > section {
+  padding-inline: var(--main-site-padding-inline);
+  padding-block: var(--main-section-padding-block);
+}
+
+/************************************************
+/*         Sekcija What We Do
+/************************************************/
+
+#what-we-do {
+  text-align: center;
+}
+
+section#what-we-do > h2 {
+  text-transform: uppercase;
+  color: var(--h2-color-dark);
+}
+
+#what-we-do-articles {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1rem;
+  justify-content: center;
+}
+
+#what-we-do-articles article {
+  padding: 1rem;
+}
+
+#what-we-do-articles article h3 {
+    margin-bottom: 1rem;
+}
+
+#what-we-do-articles article .article-icon {
+    width: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/*********************************************************
+/*        New offers sekcija
+/********************************************************/
+
+section#new-offers {
+  display: flex;
+}
+
+section#new-offers p {
+    margin-block: 1rem;
+}
+
+section#new-offers figure img {
+    width: 10rem;
+}
+
+section#new-offers article {
+    text-align: left;
+    color: var(--header-txt-color);
+    
+}
+
+/*********************************************************
+/*        Our portfolio sekcija
+/********************************************************/
+section#our-portfolio > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 5rem;
+}
+
+section#our-portfolio figure {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+section#our-portfolio figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*********************************************************
+/*        Contact us sekcija
+/********************************************************/
+
+section#contact-us form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+section#contact-us form textarea {
+grid-column: span 2;
+height: 10rem;
+}
+
+section#contact-us form input {
+ border: 0;
+}
+
+section#contact-us form input,
+section#contact-us form textarea {
+background-color: var(--form-elements-bkg) ;
+padding: 0.5rem;
+}
+
+
+section#contact-us form button {
+    width: 10rem;
+    border: 0;
+}
+
+
+/*********************************************************
+/*        Footerio styliai
+/********************************************************/
+
+footer {
+  background-color: #202628;
+  color: var(--header-txt-color);
+  font-size: 0.8rem;
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+
+}
+
+footer p span {
+    color: red;
+}
+
+footer ul#social-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/*********************************************************
+/*        Pritaikymas mazaja ekranui
+/********************************************************/
+
+@media (max-width: 991px) {
+
+/**************  Hero section *****************/
+
+header #hero {
+  
+  width: 80%;
+}
+
+.main-container header nav ul {
+    gap: 0.5rem;
+}
+
+.main-container header nav ul a {
+    font-size: 0.6rem;
+}
+
+/************************************************
+/* Bendri sekciju styliai
+/************************************************/
+
+main > section {
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+}
+
+/************************************************
+/*         Sekcija What We Do
+/************************************************/
+
+
+#what-we-do-articles {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+}
+
+#what-we-do-articles article {
+  padding: 1rem;
+  width: 40%
+}
+
+#what-we-do-articles article .article-icon {
+    width: 1.2rem;
+    }
+
+/*********************************************************
+/*        New offers sekcija
+/********************************************************/
+
+section#new-offers {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+
+section#new-offers p {
+    margin-block: 1rem;
+}
+
+section#new-offers figure img {
+    width: 60%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+
+/*********************************************************
+/*        Our portfolio sekcija
+/********************************************************/
+
+section#our-portfolio figure {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+/*********************************************************
+/*        Contact us sekcija
+/********************************************************/
+
+section#contact-us form {
+    
+    grid-template-columns: 1fr;
+    
+}
+section#contact-us form textarea {
+grid-column: span 1;
+
+}
+
+
+
+
+
+/*********************************************************
+/*        Footerio styliai
+/********************************************************/
+
+footer {
+  flex-direction: column;
+  align-items: center;
+gap: 2rem; 
+}
+
+
+}
